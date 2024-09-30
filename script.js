@@ -1,7 +1,7 @@
 let toastBox = document.getElementById("toastBox");
-let successMsg = "Successfully submitted";
-let errorMsg = "Please fix the error!";
-let invalidMsg = "Invalid input, check again";
+let successMsg = "<strong><span>✔️</span> Successfully submitted</strong>";
+let errorMsg = "<strong><span>❌</span> Please fix the error!</strong>";
+let invalidMsg = "<strong><span>❗</span> Invalid input, check again</strong>";
 
 function showToast(msg) {
   let toast = document.createElement("div");
@@ -18,5 +18,5 @@ function showToast(msg) {
 
   setTimeout(() => {
     toast.remove();
-  }, 6000);
+  }, 5000);
 }
